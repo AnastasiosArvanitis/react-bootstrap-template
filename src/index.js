@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './custom.scss';
 //import './styles/_global.scss';
 
 import App from './App';
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+    <Router>
+        <Route path='/' component={App} />
+    </Router>, 
+    document.getElementById('root')
+);
