@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Test = () => {
+const Home = () => {
     return(
         <div>
             <h1>React bootstrap Template !!!!!!!</h1>
@@ -10,4 +10,4 @@ const Test = () => {
     );
 }
 
-export default Test;
+export default Home;

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Test from './components/test.jsx';
+import Home from './components/Home.jsx';
 
 
 const App = () => {
     return(
-        <Test/>
+        <Home/>
     );
 }
 
