@@ -23,7 +23,7 @@ const Home = () => {
       <Container fluid={true}>
       <Row>
         <Col xs={12} sm={3} md={4} lg={5} xl={2}>
-            <Jumbotron>1 of 2
+            <Jumbotron>1 of 2 HOME
             </Jumbotron>    
         </Col>
         <Col xs={12} sm={9} md={8} lg={7} xl={10}>
