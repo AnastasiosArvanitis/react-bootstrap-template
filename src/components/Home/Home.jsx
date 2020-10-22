@@ -1,37 +1,26 @@
 import React from 'react';
 import { 
-    Container, Row, Col, 
-    Jumbotron, 
-    Navbar, Nav, NavDropdown 
+    Container, 
+    Row, Col, 
+    Jumbotron
 } from 'react-bootstrap';
-
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from 'react-router-dom';
-
-
 
 const Home = () => {
     return(
-        <>
-
-            
-
-      <Container fluid={true}>
-      <Row>
-        <Col xs={12} sm={3} md={4} lg={5} xl={2}>
-            <Jumbotron>1 of 2 HOME
-            </Jumbotron>    
-        </Col>
-        <Col xs={12} sm={9} md={8} lg={7} xl={10}>
-            <Jumbotron>1 of 2
-            </Jumbotron> 
-        </Col>
-      </Row>
-    </Container>
+    <>
+        <Container fluid={true} className='mt-5'>
+        <Row>
+            <Col xs={0} sm={1} md={2} lg={2} xl={3}>
+            </Col>
+            <Col xs={12} sm={10} md={8} lg={8} xl={6}>
+                <Jumbotron className='bg-info'>
+                    <p className='text-center display-4'>Home</p> 
+                </Jumbotron>    
+            </Col>
+            <Col xs={0} sm={1} md={2} lg={2} xl={3}>
+            </Col>
+        </Row>
+        </Container>
     </> 
     );
 }
