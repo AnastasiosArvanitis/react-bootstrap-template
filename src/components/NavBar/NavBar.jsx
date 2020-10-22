@@ -18,29 +18,32 @@ import NavBarContent from '../../content/NavBarContent.js';
 
 const NavBar = () => {
     return (
-    <Navbar bg="dark" variant="dark">
-        <Nav className="container-fluid nav-bar">
-
-            <Nav.Item >
-                <Navbar.Brand 
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        
+        <Navbar.Brand 
                     as={Link} 
                     to="/"
                 >
                     React Bootstrap Template
-                </Navbar.Brand>
-            </Nav.Item>
+        </Navbar.Brand>
 
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        <Navbar.Collapse id="responsive-navbar-nav">
+                
+        <Nav className="ml-auto">
             { NavBarContent.map( (item) => {
                 return(
-                    <Nav.Item className="ml-auto ml-0">
+                    <Nav.Item key={item.link+1}>
                         <Nav.Link as={Link} to={item.link}> 
                             {item.linkTitle} 
                         </Nav.Link>
                     </Nav.Item>)
                 })
             }  
-
         </Nav>
+
+        </Navbar.Collapse>
     </Navbar>
     );
 }
