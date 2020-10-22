@@ -2,7 +2,7 @@ import React from 'react';
 
 const Documentation = () => {
     return(
-        <h1>Documentaion</h1>
+        <h1>Documentation</h1>
     );
 }
 
